@@ -1,4 +1,5 @@
 # Songbook Py2TeX
+
 Python generator for songbook, from dict to TeX format
 
 ## Idea
@@ -29,7 +30,8 @@ a może już po\[H7]zostanie tak?
 
 ### Output
 
-After song processing XeLaTeX will process full songbook using *songbook* package
+After song processing XeLaTeX will process full songbook using *songbook* package.
+Output format is PDF.
 
 ## Requirements
 - XeLaTeX installation, TeX Live or MacTeX
