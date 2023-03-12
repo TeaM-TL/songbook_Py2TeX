@@ -36,6 +36,17 @@ a H7 e
 To on mnie od tyłu, kumple w śmiech.
 endverse
 
+chorus
+a D e
+O – ho, ho! Przechyły i przechyły!
+a D e
+O – ho, ho! Za falą fala mknie!
+a D e
+O – ho, ho! Trzymajcie się dziewczyny!
+a H7 e
+Ale wiatr, ósemka chyba dmie!
+endchorus
+
 verse
 e D e
 Hej ty tam z burtę wychylony
@@ -47,6 +58,17 @@ a H7 e
 Żeby coś nie spadło ci na kark.
 endverse
 
+chorus
+a D e
+O – ho, ho! Przechyły i przechyły!
+a D e
+O – ho, ho! Za falą fala mknie!
+a D e
+O – ho, ho! Trzymajcie się dziewczyny!
+a H7 e
+Ale wiatr, ósemka chyba dmie!
+endchorus
+
 verse
 e D e
 Krople mgły, w tęczowym kropel pyle
@@ -57,3 +79,14 @@ Jutro znów wypłynę, bo odkryłem
 a H7 e
 Morze, jacht. żeglarską starą pieśń.
 endverse
+
+chorus
+a D e
+O – ho, ho! Przechyły i przechyły!
+a D e
+O – ho, ho! Za falą fala mknie!
+a D e
+O – ho, ho! Trzymajcie się dziewczyny!
+a H7 e
+Ale wiatr, ósemka chyba dmie!
+endchorus

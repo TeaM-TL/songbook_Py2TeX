@@ -36,6 +36,17 @@ a7 d7 F G
 A o mroźnej Grenlandii zapomina się tam.
 endverse
 
+chorus
+C G C C7
+Tylko wezmę mój sztormiak i sweter,
+F C G
+Ostatni raz spojrzę na pirs.
+F C e
+Pozdrów moich kolegów, powiedz, że dnia pewnego
+d G F C
+Spotkamy się wszyscy tam w Fiddler’s Green.
+endchorus
+
 verse
 C F C a
 Kiedy już tam dopłynę, oddam cumy na ląd,
@@ -47,6 +58,17 @@ a7 d7 F G
 A rum w buteleczkach rośnie na każdym z drzew.
 endverse
 
+chorus
+C G C C7
+Tylko wezmę mój sztormiak i sweter,
+F C G
+Ostatni raz spojrzę na pirs.
+F C e
+Pozdrów moich kolegów, powiedz, że dnia pewnego
+d G F C
+Spotkamy się wszyscy tam w Fiddler’s Green.
+endchorus
+
 verse
 C F C a
 Aureola i harfa to nie to, o czym śnię,
@@ -57,3 +79,14 @@ Stare pudło wyciągnę, zagram coś w cichą noc,
 a7 d7 F G
 A wiatr w takielunku zaśpiewa swój song.
 endverse
+
+chorus
+C G C C7
+Tylko wezmę mój sztormiak i sweter,
+F C G
+Ostatni raz spojrzę na pirs.
+F C e
+Pozdrów moich kolegów, powiedz, że dnia pewnego
+d G F C
+Spotkamy się wszyscy tam w Fiddler’s Green.
+endchorus

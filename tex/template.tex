@@ -1,17 +1,33 @@
 %\documentclass[a4paper,sfheadings,12pt]{mwrep}
 % mwrep has no space for marginnotes, needs more configuration :-(
-\documentclass[oneside,12pt]{report}
+\documentclass[oneside,11pt]{report}
 \usepackage{xltxtra}
 \usepackage{xunicode}
 \usepackage{fontspec}
 \usepackage{polski}
 
-\usepackage[a4paper, marginparwidth=25mm]{geometry}
+\usepackage[a4paper]{geometry}
+\usepackage{geometry}
+\geometry{
+  verbose,
+  paperwidth=210mm,
+  paperheight=297mm,
+  marginparwidth=35mm,
+  left=45mm,
+  right=22.5mm,
+  top=20mm,
+  bottom=25mm,
+  headsep=12pt
+}
 
 \usepackage{marginnote}
 %\reversemarginpar
 
 \usepackage[chorded]{songs}
+%\usepackage[slides]{songs}
+\versesep=5pt plus 2pt minus 2pt
+
+
 \usepackage{setspace}
 \usepackage{hyperref}
 \hypersetup{
@@ -21,7 +37,9 @@
     linktoc=all
 }
 
+\pagestyle{empty}
 \newindex{titleidx}{cbtitle}
+%\newindex{mainindex}{idxfile}
 
 \newcommand{\TITLE}{Mój śpiewnik}
 \newcommand{\SUBTITLE}{Szanty na rejsy}
@@ -37,7 +55,9 @@
 \input{title}
 \clearpage
 
+\noversenumbers
 \songcolumns{1}
+
 
 \begin{songs}{titleidx}
 

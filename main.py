@@ -53,7 +53,7 @@ def generate(songs_dir, out_dir, chord_above, chord_right):
     """ generate TeX from TXT file """
 
     song_files = [file_name for file_name in os.listdir(songs_dir) if file_name.endswith(SONGEXT)]
-
+    song_files.sort()
     for song_file in song_files:
         song_name = os.path.splitext(song_file)[0]
         print('Processing: ' + song_name)
@@ -105,7 +105,7 @@ def generate(songs_dir, out_dir, chord_above, chord_right):
         with open(os.path.join(out_dir, song_name + TEXEXT), 'w', encoding='utf-8') as file_out:
             file_out.write(file_contents)
         with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
-            file_out.write('\\input{' + song_name + '}\n')
+            file_out.write('\\input{' + song_name + '}\n\n')
 
 
 def main():
@@ -132,13 +132,15 @@ def main():
     shutil.copyfile(os.path.join(template, 'template.tex'), os.path.join(out_dir, 'main.tex'))
     shutil.copyfile(os.path.join(template, 'title.tex'),    os.path.join(out_dir, 'title.tex'))
     shutil.copyfile(os.path.join(template, 'songs.sty'),    os.path.join(out_dir, 'songs.sty'))
+    shutil.copyfile(os.path.join(template, 'songidx.lua'),  os.path.join(out_dir, 'songidx.lua'))
     if chord_right == 0:
         with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
             file_out.write('\\reversemarginpar\n')
     generate(songs_dir, out_dir, chord_above, chord_right)
     # end statements in TeX file
     with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
-        file_out.write('\\end{songs}\n\\end{document}\n')
+        text = '\\end{songs}\n\\showindex[2]{Spis szant}{titleidx}\n\\end{document}\n'
+        file_out.write(text)
 
 
 if __name__=="__main__":
