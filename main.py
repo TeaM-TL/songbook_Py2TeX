@@ -53,8 +53,6 @@ def generate(songs_dir, out_dir, chord_above, chord_right):
     """ generate TeX from TXT file """
 
     song_files = [file_name for file_name in os.listdir(songs_dir) if file_name.endswith(SONGEXT)]
-    if not os.path.exists(out_dir):
-        os.makedirs(out_dir)
 
     for song_file in song_files:
         song_name = os.path.splitext(song_file)[0]
@@ -123,11 +121,13 @@ def main():
     try:
         chord_right = config.getint('Settings', 'chord_right')
     except:
-        chord_right = 1
+        chord_right = 0
 
     songs_dir = os.path.join(os.getcwd(), SONGS)
     template = os.path.join(os.getcwd(), TEXTMPL)
     out_dir = os.path.join(os.getcwd(), OUTDIR)
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir)
     # TeX template
     shutil.copyfile(os.path.join(template, 'template.tex'), os.path.join(out_dir, 'main.tex'))
     shutil.copyfile(os.path.join(template, 'title.tex'),    os.path.join(out_dir, 'title.tex'))
