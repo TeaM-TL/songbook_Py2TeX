@@ -9,7 +9,7 @@ Python generator for songbook, from dict to TeX format
 Every song is in separate file, like
 ```python
 title
-Title of song
+Umbriaga
 authors
 lyrics and music: Witold Zamojski
 
