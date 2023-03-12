@@ -29,6 +29,7 @@ THE SOFTWARE.
 Python generator for songbook, from dict to TeX format
 """
 
+import configparser
 import os
 import shutil
 
@@ -39,13 +40,12 @@ SONGEXT='txt'
 TEXEXT='.tex'
 
 
-def generate(songs_dir, out_dir):
+def generate(songs_dir, out_dir, chord_above):
     """ generate TeX from TXT file """
 
     song_files = [file_name for file_name in os.listdir(songs_dir) if file_name.endswith(SONGEXT)]
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
-    songs = {}
 
     for song_file in song_files:
         song_name = os.path.splitext(song_file)[0]
@@ -56,27 +56,28 @@ def generate(songs_dir, out_dir):
         text = ''
         with open(os.path.join(songs_dir,song_file), 'r', encoding='utf-8') as file_data:
             for line in file_data:
-                if line == 'title\n':
+                line = line.strip()
+                if line == 'title':
                     doit = 4
-                elif line == 'authors\n':
+                elif line == 'authors':
                     text = ''
                     doit = 3
-                elif line == 'verse\n' or line == 'chorus\n':
-                    text = '\\' + line
+                elif line in ('verse', 'chorus'):
+                    text = '\\' + line + '\n'
                     doit = 1
-                elif line == 'endverse\n' or line == 'endchorus\n':
-                    text = '\\' + line
+                elif line in ('endverse', 'endchorus'):
+                    text = '\\' + line + '\n'
                     doit = 0
                 elif line == '':
                     text = '\n'
                 else:
                     if doit == 4:
                         # title
-                        text = line[0:-1] + '}['
+                        text = line + '}['
                         doit = 0
                     elif doit == 3:
                         # authors
-                        text = 'by={' + line[0:-1] + '}]\n'
+                        text = 'by={' + line + '}]\n'
                         doit = 0
                     elif doit == 1:
                         # acords
@@ -84,9 +85,9 @@ def generate(songs_dir, out_dir):
                         doit = 0
                     else:
                         # verse
-                        text = line
+                        text = line + '\n'
                         doit = 1
-                file_contents = file_contents + text
+                file_contents = file_contents + str(text)
 
         file_contents = file_contents + '\\endsong\n'
         #print(file_contents)
@@ -98,13 +99,22 @@ def generate(songs_dir, out_dir):
 
 def main():
     """ main function """
+    config = configparser.ConfigParser()
+    config.read('config.ini', encoding="utf8")
+
+    # read values from a section
+    try:
+        chord_above = config.getint('Settings', 'chord_above')
+    except:
+        chord_above = 0
+
     songs_dir = os.path.join(os.getcwd(), SONGS)
     template = os.path.join(os.getcwd(), TEXTMPL)
     out_dir = os.path.join(os.getcwd(), OUTDIR)
     # TeX template
     shutil.copyfile(os.path.join(template, 'template.tex'), os.path.join(out_dir, 'main.tex'))
     shutil.copyfile(os.path.join(template, 'songs.sty'),    os.path.join(out_dir, 'songs.sty'))
-    generate(songs_dir,out_dir)
+    generate(songs_dir, out_dir, chord_above)
     # end statements in TeX file
     with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
         file_out.write('\\end{songs}\n\\end{document}\n')

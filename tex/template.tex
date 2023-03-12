@@ -1,4 +1,4 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper,sfheadings]{mwrep}
 \usepackage{xltxtra}
 \usepackage{xunicode}
 \usepackage{fontspec}
@@ -6,14 +6,23 @@
 
 \usepackage[chorded]{songs}
 \usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    linktoc=all
+}
 
 \newindex{titleidx}{cbtitle}
 
 \title{Mój śpiewnik}
-\date{Data złożenia: \today}
+\author{Jacek}
+\date{\today}
 
 \begin{document}
 \maketitle
+
 
 \songcolumns{1}
 
