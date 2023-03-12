@@ -30,17 +30,18 @@ Python generator for songbook, from dict to TeX format
 """
 
 import os
+import shutil
 
 SONGS='songs'
 OUTDIR='tmp'
+TEXTMPL='tex'
 SONGEXT='txt'
 TEXEXT='.tex'
 
 
-def generate():
+def generate(songs_dir, out_dir):
     """ generate TeX from TXT file """
-    songs_dir = os.path.join(os.getcwd(), SONGS)
-    out_dir = os.path.join(os.getcwd(), OUTDIR)
+
     song_files = [file_name for file_name in os.listdir(songs_dir) if file_name.endswith(SONGEXT)]
     if not os.path.exists(out_dir):
         os.makedirs(out_dir)
@@ -75,7 +76,7 @@ def generate():
                         doit = 0
                     elif doit == 3:
                         # authors
-                        text = 'by={' + line[0:-1] + '}]\n\n'
+                        text = 'by={' + line[0:-1] + '}]\n'
                         doit = 0
                     elif doit == 1:
                         # acords
@@ -89,13 +90,25 @@ def generate():
 
         file_contents = file_contents + '\\endsong\n'
         #print(file_contents)
-        with open(os.path.join(out_dir,song_name + TEXEXT), 'w', encoding='utf-8') as file_out:
+        with open(os.path.join(out_dir, song_name + TEXEXT), 'w', encoding='utf-8') as file_out:
             file_out.write(file_contents)
+        with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
+            file_out.write('\\input{' + song_name + '}\n')
 
 
 def main():
     """ main function """
-    generate()
+    songs_dir = os.path.join(os.getcwd(), SONGS)
+    template = os.path.join(os.getcwd(), TEXTMPL)
+    out_dir = os.path.join(os.getcwd(), OUTDIR)
+    # TeX template
+    shutil.copyfile(os.path.join(template, 'template.tex'), os.path.join(out_dir, 'main.tex'))
+    shutil.copyfile(os.path.join(template, 'songs.sty'),    os.path.join(out_dir, 'songs.sty'))
+    generate(songs_dir,out_dir)
+    # end statements in TeX file
+    with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
+        file_out.write('\\end{songs}\n\\end{document}\n')
+
 
 if __name__=="__main__":
     main()
