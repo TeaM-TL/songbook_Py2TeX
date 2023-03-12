@@ -68,3 +68,15 @@ Output format is PDF.
 ## Requirements
 - XeLaTeX installation, TeX Live or MacTeX
 - Python3
+
+## How to run
+
+Linux or MacOS
+```bash
+sh start.sh
+```
+or if use Windows
+```bash
+start.bat
+```
+
