@@ -40,7 +40,19 @@ SONGEXT='txt'
 TEXEXT='.tex'
 
 
-def generate(songs_dir, out_dir, chord_above):
+def verse_parse(line, chord, chord_above, chord_right):
+    """ parse verse """
+    if chord_above == 0:
+        if chord_right:
+            text = line + ' \\textbf{' + chord + '}\n'
+        else:
+            text = '\\textbf{' + chord + '} ' + line + '\n'
+    else:
+        text = line + '\n'
+    return text
+
+
+def generate(songs_dir, out_dir, chord_above, chord_right):
     """ generate TeX from TXT file """
 
     song_files = [file_name for file_name in os.listdir(songs_dir) if file_name.endswith(SONGEXT)]
@@ -86,9 +98,10 @@ def generate(songs_dir, out_dir, chord_above):
                         # acords
                         text = ''
                         doit = 0
+                        chord = line
                     else:
                         # verse
-                        text = line + '\n'
+                        text = verse_parse(line, chord, chord_above, chord_right)
                         doit = 1
                 file_contents = file_contents + str(text)
 
@@ -110,6 +123,10 @@ def main():
         chord_above = config.getint('Settings', 'chord_above')
     except:
         chord_above = 0
+    try:
+        chord_right = config.getint('Settings', 'chord_right')
+    except:
+        chord_right = 1
 
     songs_dir = os.path.join(os.getcwd(), SONGS)
     template = os.path.join(os.getcwd(), TEXTMPL)
@@ -117,7 +134,7 @@ def main():
     # TeX template
     shutil.copyfile(os.path.join(template, 'template.tex'), os.path.join(out_dir, 'main.tex'))
     shutil.copyfile(os.path.join(template, 'songs.sty'),    os.path.join(out_dir, 'songs.sty'))
-    generate(songs_dir, out_dir, chord_above)
+    generate(songs_dir, out_dir, chord_above, chord_right)
     # end statements in TeX file
     with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
         file_out.write('\\end{songs}\n\\end{document}\n')
