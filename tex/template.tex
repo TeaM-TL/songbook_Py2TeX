@@ -1,8 +1,15 @@
-\documentclass[a4paper,sfheadings,12pt]{mwrep}
+%\documentclass[a4paper,sfheadings,12pt]{mwrep}
+% mwrep has no space for marginnotes, needs more configuration :-(
+\documentclass[oneside,12pt]{report}
 \usepackage{xltxtra}
 \usepackage{xunicode}
 \usepackage{fontspec}
 \usepackage{polski}
+
+\usepackage[a4paper, marginparwidth=25mm]{geometry}
+
+\usepackage{marginnote}
+%\reversemarginpar
 
 \usepackage[chorded]{songs}
 \usepackage{setspace}
@@ -16,13 +23,19 @@
 
 \newindex{titleidx}{cbtitle}
 
-\title{Mój śpiewnik na rejsy}
-\author{Zebrał Jacek}
-\date{Złożono \today\\generatorem \url{https://github.com/TeaM-TL/songbook_Py2TeX/}}
+\newcommand{\TITLE}{Mój śpiewnik}
+\newcommand{\SUBTITLE}{Szanty na rejsy}
+\newcommand{\AUTHOR}{Jacek}
+\newcommand{\GENERATOR}{generator \url{https://github.com/TeaM-TL/songbook_Py2TeX/}}
+
+\title{\TITLE}
+\author{Zebrał \AUTHOR}
+\date{\GENERATOR \\ \today}
 
 \begin{document}
-\maketitle
-
+%\maketitle
+\input{title}
+\clearpage
 
 \songcolumns{1}
 

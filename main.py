@@ -40,13 +40,10 @@ SONGEXT='txt'
 TEXEXT='.tex'
 
 
-def verse_parse(line, chord, chord_above, chord_right):
+def verse_parse(line, chord, chord_above):
     """ parse verse """
     if chord_above == 0:
-        if chord_right:
-            text = line + ' \\textbf{' + chord + '}\n'
-        else:
-            text = '\\textbf{' + chord + '} ' + line + '\n'
+        text = '\\marginnote{\\textsf{' + chord + '}} ' + line + '\n'
     else:
         text = line + '\n'
     return text
@@ -101,7 +98,7 @@ def generate(songs_dir, out_dir, chord_above, chord_right):
                         chord = line
                     else:
                         # verse
-                        text = verse_parse(line, chord, chord_above, chord_right)
+                        text = verse_parse(line, chord, chord_above)
                         doit = 1
                 file_contents = file_contents + str(text)
 
@@ -133,7 +130,11 @@ def main():
     out_dir = os.path.join(os.getcwd(), OUTDIR)
     # TeX template
     shutil.copyfile(os.path.join(template, 'template.tex'), os.path.join(out_dir, 'main.tex'))
+    shutil.copyfile(os.path.join(template, 'title.tex'),    os.path.join(out_dir, 'title.tex'))
     shutil.copyfile(os.path.join(template, 'songs.sty'),    os.path.join(out_dir, 'songs.sty'))
+    if chord_right == 0:
+        with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
+            file_out.write('\\reversemarginpar\n')
     generate(songs_dir, out_dir, chord_above, chord_right)
     # end statements in TeX file
     with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
