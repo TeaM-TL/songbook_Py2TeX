@@ -63,7 +63,10 @@ def generate(songs_dir, out_dir, chord_above):
                     text = ''
                     doit = 3
                 elif line in ('verse', 'chorus'):
-                    text = '\\' + line + '\n'
+                    if chord_above:
+                        text = '\\' + line + '\n'
+                    else:
+                        text = '\\' + line + '\\singlespace\n'
                     doit = 1
                 elif line in ('endverse', 'endchorus'):
                     text = '\\' + line + '\n'
