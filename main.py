@@ -100,7 +100,7 @@ def generate(songs_dir, out_dir, chord_above, chord_right):
                         doit = 1
                 file_contents = file_contents + str(text)
 
-        file_contents = file_contents + '\\endsong\n'
+        file_contents = file_contents + '\n\\endsong\n'
         #print(file_contents)
         with open(os.path.join(out_dir, song_name + TEXEXT), 'w', encoding='utf-8') as file_out:
             file_out.write(file_contents)
@@ -139,7 +139,7 @@ def main():
     generate(songs_dir, out_dir, chord_above, chord_right)
     # end statements in TeX file
     with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
-        text = '\\end{songs}\n\\showindex[2]{Spis szant}{titleidx}\n\\end{document}\n'
+        text = '\n\\end{songs}\n\\showindex[2]{Spis szant}{titleidx}\n\\end{document}\n'
         file_out.write(text)
 
 
