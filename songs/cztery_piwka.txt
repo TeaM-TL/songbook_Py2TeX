@@ -1,162 +1,75 @@
-title
-Cztery piwka
-authors
-słowa i muzyka: Jerzy Porębski
+title: Cztery piwka
+authors: słowa i muzyka: Jerzy Porębski
 
-verse
-a
-Ze Świnoujścia do Walvis Bay
-a
-Droga nie była krótka,
-a
-A po dwóch dobach, albo mniej,
-a
-Już się skończyła wódka.
-a
-„Do brydża!” – krzyknął Siwy Flak
-a
-I z miejsca rzekł – „Dwa piki”,
-a
-A ochmistrz w „telewizor” wlał
-E7 a
-Nie byle jakie siki.
-endverse
 
-chorus
-A D
-Cztery piwka na stół, w popielniczkę pet, 
-E7 A
-Jakąś Damę roześmianą Król przytuli wnet. 
-A7 D
-Gdzieś między palcami sennie płynie czas. 
-E7 a
-czwarta ręka, Króla bije As 
-endchorus
+Ze Świnoujścia do Walvis Bay | a
+Droga nie była krótka, | a
+A po dwóch dobach, albo mniej, | a
+Już się skończyła wódka. | a
+„Do brydża!” – krzyknął Siwy Flak | a
+I z miejsca rzekł – „Dwa piki”, | a
+A ochmistrz w „telewizor” wlał | a
+Nie byle jakie siki. | E7 a
 
-verse
-a
-A w karcie tylko jeden As
-a
-I nic poza tym nie ma,
-a
-Ale nie powiem przecie Pas,
-a
-Może zagrają szlema?
-a
-Kontra – mu rzekłem, taki bluff,
-a
-By nieco spuścił z tonu,
-a
-A Fred mu na to – Cztery trefl!
-E7 a
-Przywalił bez pardonu.
-endverse
+
+ Cztery piwka na stół, w popielniczkę pet, | A D
+ Jakąś Damę roześmianą Król przytuli wnet. | E7 A
+ Gdzieś między palcami sennie płynie czas. | A7 D
+ czwarta ręka, Króla bije As | E7 a
+
+
+A w karcie tylko jeden As | a
+I nic poza tym nie ma, | a
+Ale nie powiem przecie Pas, | a
+Może zagrają szlema? | a
+Kontra – mu rzekłem, taki bluff, | a
+By nieco spuścił z tonu, | a
+A Fred mu na to – Cztery trefl! | a
+Przywalił bez pardonu. | E7 a
+
 
 chorus
-A D
-Cztery piwka na stół, w popielniczkę pet, 
-E7 A
-Jakąś Damę roześmianą Król przytuli wnet. 
-A7 D
-Gdzieś między palcami sennie płynie czas. 
-E7 a
-czwarta ręka, Króla bije As 
-endchorus
 
-verse
-a
-A „mój” w dwa palce obtarł nos,
-a
-To znaczy: nie ma nic…
-a
-I wtedy Flak, podnosząc głos,
-a
-Powiedział – „Cztery pik!”
-a
-I kiedy jeszcze cztery Króle
-a
-Pokazał mu jak trza,
-a
-To Fred, z renonsem – „Siedem pik” –
-E7 a
-Powiedział – „Niech gra Flak!”
-endverse
+A „mój” w dwa palce obtarł nos, | a
+To znaczy: nie ma nic | a
+I wtedy Flak, podnosząc głos, | a
+Powiedział – „Cztery pik!” | a
+I kiedy jeszcze cztery Króle | a
+Pokazał mu jak trza, | a
+To Fred, z renonsem – „Siedem pik” – | a
+Powiedział – „Niech gra Flak!” | E7 a
 
 chorus
-A D
-Cztery piwka na stół, w popielniczkę pet, 
-E7 A
-Jakąś Damę roześmianą Król przytuli wnet. 
-A7 D
-Gdzieś między palcami sennie płynie czas. 
-E7 a
-czwarta ręka, Króla bije As 
-endchorus
 
-verse
-a
-A ja mu – Kontra, on mi – Re,
-a
-Ja czuję pełen luz,
-a
-Bo widzę w moich kartach, że
-a
-Jest atutowy tuz.
-a
-Więc strzelam! Kiedy karty Fred
-a
-Wyłożył mu na blat,
-a
-To każdy mógł zobaczyć, jak
-E7 a
-Siwego Flaka trafia szlag.
-endverse
+A ja mu – Kontra, on mi – Re, | a
+Ja czuję pełen luz, | a
+Bo widzę w moich kartach, że | a
+Jest atutowy tuz. | a
+Więc strzelam! Kiedy karty Fred | a
+Wyłożył mu na blat, | a
+To każdy mógł zobaczyć, jak | a 
+Siwego Flaka trafia szlag. | E7 a
+
 
 chorus
-A D
-Cztery piwka na stół, w popielniczkę pet, 
-E7 A
-Jakąś Damę roześmianą Król przytuli wnet. 
-A7 D
-Gdzieś między palcami sennie płynie czas. 
-E7 a
-czwarta ręka, Króla bije As 
-endchorus
 
-verse
-a
-Już nie pamiętam, ile dni
-a
-W miesiące złożył czas,
-a
-Morszczuki dosyć dobrze szły
-a
-I grało się nie raz,
-a
-Lecz nigdy więcej Siwy Flak,
-a
-Klnę na jumprowe wszy,
-a
-Choćbyś go prosił tak, czy siak,
-E7 a
-Nie zasiadł już do gry!
-endverse
 
-chorus
-A D
-W popielniczkę pet, cztery piwka na stół,
-E7 A
-Już tej Damy roześmianej nie przytuli Król.
-A7 D
-Gdzieś nam się zapodział atutowy As,
-E7 a
-Tego Szlema z nami wygrał czas.
-A D
-Cztery piwka na stół, w popielniczkę pet,
-E7 A
-Jakąś Damę rozebraną Król przeleci wnet,
-A7 D
-Gdzieś między palcami sennie płynie czas.
-E7 a
-czwarta ręka, Króla bije As
-endchorus
+Już nie pamiętam, ile dni | a
+W miesiące złożył czas, | a
+Morszczuki dosyć dobrze szły | a
+I grało się nie raz, | a
+Lecz nigdy więcej Siwy Flak, | a
+Klnę na jumprowe wszy, | a
+Choćbyś go prosił tak, czy siak, | a
+Nie zasiadł już do gry! | E7 a
+
+
+ W popielniczkę pet, cztery piwka na stół, | A D
+ Już tej Damy roześmianej nie przytuli Król. | E7 A
+ Gdzieś nam się zapodział atutowy As, | A7 D
+ Tego Szlema z nami wygrał czas. | E7 a
+ Cztery piwka na stół, w popielniczkę pet, | A D
+ Jakąś Damę rozebraną Król przeleci wnet, | E7 A
+ Gdzieś między palcami sennie płynie czas. | A7 D
+ czwarta ręka, Króla bije As | E7 a
+

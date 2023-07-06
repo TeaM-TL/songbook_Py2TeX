@@ -26,11 +26,12 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-Python generator for songbook, from dict to TeX format
+Python generator for songbook, from txt to TeX format
 """
 
 import configparser
 import os
+import re
 import shutil
 
 SONGS='songs'
@@ -40,16 +41,23 @@ SONGEXT='txt'
 TEXEXT='.tex'
 
 
-def verse_parse(line, chord, chord_above):
-    """ parse verse """
-    if chord_above == 0:
-        text = '\\marginnote{\\textsf{' + chord + '}} ' + line + '\n'
+def line_parse(line, current_line, start):
+    """ parse line """
+    line = line.strip()
+    splitted_line = re.split('\|', line, 1)
+    if len(splitted_line) == 2:
+        text = '\\marginnote{\\textsf{' + splitted_line[1] + '}} ' + splitted_line[0] + '\n'
     else:
         text = line + '\n'
+    if start:
+        if current_line == 'verse':
+            text = '\\verse\\singlespace\n' + text
+        elif current_line == 'chorus':
+            text = '\\chorus\\singlespace\n' + text
+
     return text
 
-
-def generate(songs_dir, out_dir, chord_above, chord_right):
+def generate(songs_dir, out_dir, chord_right):
     """ generate TeX from TXT file """
 
     song_files = [file_name for file_name in os.listdir(songs_dir) if file_name.endswith(SONGEXT)]
@@ -58,46 +66,50 @@ def generate(songs_dir, out_dir, chord_above, chord_right):
         song_name = os.path.splitext(song_file)[0]
         print('Processing: ' + song_name)
 
-        file_contents = '\\beginsong{'
-        doit = 0
+        file_contents = ''
+        chorus_contents = ''
         text = ''
+        current = ''
         with open(os.path.join(songs_dir,song_file), 'r', encoding='utf-8') as file_data:
             for line in file_data:
-                line = line.strip()
-                if line == 'title':
-                    doit = 4
-                elif line == 'authors':
-                    text = ''
-                    doit = 3
-                elif line in ('verse', 'chorus'):
-                    if chord_above:
-                        text = '\\' + line + '\n'
+                line_strip = line.strip()
+                if len(line_strip) == 0:
+                    # empty line as separator
+                    if current == 'verse':
+                        text = '\\endverse\n\n'
+                    elif current == 'chorus':
+                        text = '\\endchorus\n\n'
+                        chorus_contents = chorus_contents + text
                     else:
-                        text = '\\' + line + '\\singlespace\n'
-                    doit = 1
-                elif line in ('endverse', 'endchorus'):
-                    text = '\\' + line + '\n'
-                    doit = 0
-                elif line == '':
-                    text = '\n'
-                else:
-                    if doit == 4:
-                        # title
-                        text = line + '}['
-                        doit = 0
-                    elif doit == 3:
-                        # authors
-                        text = 'by={' + line + '}]\n'
-                        doit = 0
-                    elif doit == 1:
-                        # acords
                         text = ''
-                        doit = 0
-                        chord = line
-                    else:
-                        # verse
-                        text = verse_parse(line, chord, chord_above)
-                        doit = 1
+                    current = ''
+                    start_verse = 1
+                    start_chorus = 1
+                elif re.search('chorus', line):
+                    # print chorus
+                    text = chorus_contents
+                elif re.search('^title:', line):
+                    # title
+                    title = re.split('^title:', line)
+                    text = '\\beginsong{' + title[1].strip() + '}['
+                elif re.search('^authors:', line):
+                    # authors
+                    authors = re.split('^authors:', line)
+                    text =  'by={' + authors[1].strip() + '}]\n\n'
+                elif re.search('^[^ ]', line):
+                    # verse
+                    current = 'verse'
+                    text = line_parse(line, current, start_verse)
+                    if start_verse:
+                        start_verse = 0
+                elif re.search('^ ', line):
+                    # chorus
+                    current = 'chorus'
+                    text = line_parse(line, current, start_chorus)
+                    if start_chorus:
+                        start_chorus = 0
+                    chorus_contents = chorus_contents + text
+
                 file_contents = file_contents + str(text)
 
         file_contents = file_contents + '\n\\endsong\n'
@@ -110,15 +122,11 @@ def generate(songs_dir, out_dir, chord_above, chord_right):
 
 def main():
     """ main function """
-    config = configparser.ConfigParser()
-    config.read('config.ini', encoding="utf8")
+    try:
+        config = configparser.ConfigParser()
+        config.read('config.ini', encoding="utf8")
 
-    # read values from a section
-    try:
-        chord_above = config.getint('Settings', 'chord_above')
-    except:
-        chord_above = 0
-    try:
+        # read values from a section
         chord_right = config.getint('Settings', 'chord_right')
     except:
         chord_right = 0
@@ -136,7 +144,7 @@ def main():
     if chord_right == 0:
         with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
             file_out.write('\\reversemarginpar\n')
-    generate(songs_dir, out_dir, chord_above, chord_right)
+    generate(songs_dir, out_dir, chord_right)
     # end statements in TeX file
     with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
         text = '\n\\end{songs}\n\\showindex[2]{Spis szant}{titleidx}\n\\end{document}\n'

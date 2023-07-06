@@ -1,94 +1,30 @@
-title
-Biała sukienka
-authors
-słowa i muzyka: Lucjusz Michał Kowalczyk
+title: Biała sukienka
+authors: słowa i muzyka: Lucjusz Michał Kowalczyk
 
-verse
-a e F C
-Czasami, gdy mam chandrę i jestem sam, 
-a e F G C
-Kieruję wzrok za okno, wysoko tam, 
-E a G7 D
-Gdzie nad dachami domów i w noc, i dniem, 
-a e F G C
-Nadpływa kołysząca, …marzeniem, …snem.
-endverse
+Czasami, gdy mam chandrę i jestem sam, | a e F C
+Kieruję wzrok za okno, wysoko tam, | a e F G C
+Gdzie nad dachami domów i w noc, i dniem, | E a G7 D
+Nadpływa kołysząca, marzeniem, snem. |a e F G C
 
-chorus
-C G
-I ona taka w tej białej sukience, 
-C F C
-Jak piękny ptak, który zapiera w piersi dech. 
-G C F
-Chwyciłem mocno jej obie ręce 
-C a D7 G
-Oczarowany, zasłuchany w słodki śmiech. 
-C G
-I cała w żaglach, jak w białej sukience, 
-C F C
-Jak piękny ptak, który zapiera w piersi dech. 
-G C F
-Chwyciłem mocno ster w obie ręce 
-C G C
-I żeglowałem zasłuchany w fali śpiew. 
-endchorus
+ I ona taka w tej białej sukience, | C G
+ Jak piękny ptak, który zapiera w piersi dech. | C F C
+ Chwyciłem mocno jej obie ręce | G C F
+ Oczarowany, zasłuchany w słodki śmiech. | C a D7 G
+ I cała w żaglach, jak w białej sukience, | C G
+ Jak piękny ptak, który zapiera w piersi dech. | C F C
+ Chwyciłem mocno ster w obie ręce | G C F
+ I żeglowałem zasłuchany w fali śpiew. | C G C
 
-verse
-a e F C
-Wspomnienia przemijają, a w sercu żal,
-a e F G C
-Wciąż w łajbę się przemienia dziewczęcy czar.
-E a G7 D
-Jeżeli mi nie wierzysz, to gnaj co tchu,
-a e F G C
-Tam z kei możesz ujrzeć coś z mego snu.
-endverse
+Wspomnienia przemijają, a w sercu żal, | a e F C
+Wciąż w łajbę się przemienia dziewczęcy czar. | a e F G C
+Jeżeli mi nie wierzysz, to gnaj co tchu, | E a G7 D
+Tam z kei możesz ujrzeć coś z mego snu. | a e F G C
 
 chorus
-C G
-I ona taka w tej białej sukience, 
-C F C
-Jak piękny ptak, który zapiera w piersi dech. 
-G C F
-Chwyciłem mocno jej obie ręce 
-C a D7 G
-Oczarowany, zasłuchany w słodki śmiech. 
-C G
-I cała w żaglach, jak w białej sukience, 
-C F C
-Jak piękny ptak, który zapiera w piersi dech. 
-G C F
-Chwyciłem mocno ster w obie ręce 
-C G C
-I żeglowałem zasłuchany w fali śpiew. 
-endchorus
 
-verse
-a e F C
-Nie wiem, czy jeszcze kiedyś zobaczę ją,
-a e F G C
-Czy tylko w moich myślach jej oczy lśnią?
-E a G7 D
-Gdy pochylona, ostro do wiatru szła…
-a e F G C
-Znowu się przeplatają obrazy dwa:
-endverse
+Nie wiem, czy jeszcze kiedyś zobaczę ją, | a e F C
+Czy tylko w moich myślach jej oczy lśnią? | a e F G C
+Gdy pochylona, ostro do wiatru szła... | E a G7 D
+Znowu się przeplatają obrazy dwa: | a e F G C
 
 chorus
-C G
-I ona taka w tej białej sukience, 
-C F C
-Jak piękny ptak, który zapiera w piersi dech. 
-G C F
-Chwyciłem mocno jej obie ręce 
-C a D7 G
-Oczarowany, zasłuchany w słodki śmiech. 
-C G
-I cała w żaglach, jak w białej sukience, 
-C F C
-Jak piękny ptak, który zapiera w piersi dech. 
-G C F
-Chwyciłem mocno ster w obie ręce 
-C G C
-I żeglowałem zasłuchany w fali śpiew. 
-endchorus
