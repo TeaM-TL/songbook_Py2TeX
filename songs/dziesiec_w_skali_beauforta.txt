@@ -1,70 +1,27 @@
-title
-Dziesięć w skali Beauforta
-authors
-słowa: Janusz Kondratowicz, muzyka: Krzysztof Klenczon
+title: Dziesięć w skali Beauforta
+authors: słowa: Janusz Kondratowicz, muzyka: Krzysztof Klenczon
 
-verse
-a d
-Kołysał nas zachodni wiatr, 
-E7 a
-Brzeg gdzieś za rufą został. 
-d a
-I nagle ktoś jak papier zbladł
-H7 E7
-Sztorm idzie, Panie Bosman!
-endverse
+Kołysał nas zachodni wiatr, | a d
+Brzeg gdzieś za rufą został. | E7 a
+I nagle ktoś jak papier zbladł | d a
+Sztorm idzie, Panie Bosman! | H7 E7
 
-chorus
-F C F C
-A bosman tylko zapiął płaszcz
-F E7 a 
-I zaklął – Ech, do czorta! 
-F G a E7 a
-Nie daję łajbie żadnych szans.
-d E7 a
-Dziesięć w skali Beauforta! 
-endchorus
+ A bosman tylko zapiął płaszcz | F C F C
+ I zaklął – Ech, do czorta! | F E7 a 
+ Nie daję łajbie żadnych szans. | F G a E7 a
+ Dziesięć w skali Beauforta!  | d E7 a
 
-verse
-a d
-Z zasłony ołowianych chmur
-E7 a
-Ulewa spadła nagle.
-d a
-Rzucało nami w górę, w dół
-H7 E7
-I fala zmyła żagle.
-endverse
+Z zasłony ołowianych chmur | a d
+Ulewa spadła nagle. | E7 a
+Rzucało nami w górę, w dół | d a
+I fala zmyła żagle. | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz
-F E7 a 
-I zaklął – Ech, do czorta! 
-F G a E7 a
-Nie daję łajbie żadnych szans.
-d E7 a
-Dziesięć w skali Beauforta! 
-endchorus
 
-verse
-a d
-O pokład znów uderzył deszcz
-E7 a
-I padał już do rana.
-d a
-Piekielnie ciężki to był rejs,
-H7 E7
-Szczególnie dla bosmana.
-endverse
+O pokład znów uderzył deszcz | a d
+I padał już do rana. | E7 a
+Piekielnie ciężki to był rejs, | d a
+Szczególnie dla bosmana. | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz
-F E7 a 
-I zaklął – Ech, do czorta! 
-F G a E7 a
-Przedziwne czasem sny się ma.
-d E7 a
-Dziesięć w skali Beauforta!
-endchorus
+

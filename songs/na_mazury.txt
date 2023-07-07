@@ -1,124 +1,50 @@
-title
-Na Mazury
-authors
-słowa i muzyka: Lucjusz Michał Kowalczyk
+title: Na Mazury
+authors: słowa i muzyka: Lucjusz Michał Kowalczyk
 
-verse
-D A D
-Sie masz, witam Cię, piękną sprawę mam, 
-G
-Pakuj bety swe i leć ze mną tam,
-D A D
-Rzuć kłopotów stos, no nie wykręcaj się,
-A D
-Całuj wszystko w nos,
-G D A D
-Osobowym drugą klasą przejedziemy się.
-endverse
+Sie masz, witam Cię, piękną sprawę mam, | D A D
+Pakuj bety swe i leć ze mną tam, | G
+Rzuć kłopotów stos, no nie wykręcaj się, | D A D
+Całuj wszystko w nos, | A D
+Osobowym drugą klasą przejedziemy się. | G D A D
 
-chorus
-G D
-Na Mazury, Mazury, Mazury, 
-G D
-Popływamy tą łajbą z tektury,
-A
-Na Mazury, gdzie wiatr zimny wieje,
-A
-Gdzie są ryby i grzyby, i knieje.
-D G D
-Tam, gdzie fale nas bujają,
-D G D
-Gdzie się ludzie opalają, 
-D G D
-Wschody słońca piękne są
-D A D
-I komary w dupę tną.
-D G D
-Gdzie przy ogniu gra muzyka
-D G D
-I gorzała w gardłach znika, 
-D A D
-A Pan Leśniczy nie wiadomo skąd
-D A D
-Woła do nas, do nas ”Paszła won!”
-endchorus
+ Na Mazury, Mazury, Mazury, | G D
+ Popływamy tą łajbą z tektury, | G D
+ Na Mazury, gdzie wiatr zimny wieje, | A
+ Gdzie są ryby i grzyby, i knieje. | A
+ Tam, gdzie fale nas bujają,| D G D
+ Gdzie się ludzie opalają, | D G D
+ Wschody słońca piękne są | D G D
+ I komary w dupę tną. | D A D
+ Gdzie przy ogniu gra muzyka | D G D
+ I gorzała w gardłach znika, | D G D
+ A Pan Leśniczy nie wiadomo skąd | D A D
+ Woła do nas, do nas ”Paszła won!” | D A D
 
-verse
-D A D
-Uszczelniłem dno, lekko chodzi miecz,
-G
-Zęzy smrodów sto przewietrzyłem precz,
-D A D
-Ster nie spada już i grot luzuje się,
-A D
-Więc się ze mną rusz, 
-G D A D 
-Już nie będzie tak jak wtedy, nie denerwuj się.
-endverse
+
+Uszczelniłem dno, lekko chodzi miecz, | D A D
+Zęzy smrodów sto przewietrzyłem precz, | G
+Ster nie spada już i grot luzuje się, | D A D
+Więc się ze mną rusz, | A D
+Już nie będzie tak jak wtedy, nie denerwuj się. | G D A D 
 
 chorus
-G D
-Na Mazury, Mazury, Mazury, 
-G D
-Popływamy tą łajbą z tektury,
-A
-Na Mazury, gdzie wiatr zimny wieje,
-A
-Gdzie są ryby i grzyby, i knieje.
-D G D
-Tam, gdzie fale nas bujają,
-D G D
-Gdzie się ludzie opalają, 
-D G D
-Wschody słońca piękne są
-D A D
-I komary w dupę tną.
-D G D
-Gdzie przy ogniu gra muzyka
-D G D
-I gorzała w gardłach znika, 
-D A D
-A Pan Leśniczy nie wiadomo skąd
-D A D
-Woła do nas, do nas ”Paszła won!”
-endchorus
 
-verse
-D A D
-Skrzynkę piwa mam, Ty otwieracz weź,
-G
-Napić Ci się dam, tylko mi ją nieś,
-D A D
-Coś rozdziawił dziób i masz głupi wzrok?
-A D
-No nie stój jak ten słup,
-G D A D
-Z Węgorzewa na Ruciane wykonamy skok.
-endverse
+Skrzynkę piwa mam, Ty otwieracz weź, | D A D
+Napić Ci się dam, tylko mi ją nieś, | G
+Coś rozdziawił dziób i masz głupi wzrok? | D A D
+No nie stój jak ten słup, | A D
+Z Węgorzewa na Ruciane wykonamy skok. | G D A D
 
-chorus
-G D
-Na Mazury, Mazury, Mazury, 
-G D
-Popływamy tą łajbą z tektury,
-A
-Na Mazury, gdzie wiatr zimny wieje,
-A
-Gdzie są ryby i grzyby, i knieje.
-D G D
-Tam, gdzie fale nas bujają,
-D G D
-Gdzie się ludzie opalają, 
-D G D
-Wschody słońca piękne są
-D A D
-I komary w dupę tną.
-D G D
-Gdzie przy ogniu gra muzyka
-D G D
-I gorzała w gardłach znika, 
-D A D
-A Pan Leśniczy nie wiadomo skąd
-D A D
-Woła do nas, do nas Dzień dobry (kochane) żeglarze!”
-endchorus
+ Na Mazury, Mazury, Mazury, | G D
+ Popływamy tą łajbą z tektury, | G D
+ Na Mazury, gdzie wiatr zimny wieje, | A
+ Gdzie są ryby i grzyby, i knieje. | A
+ Tam, gdzie fale nas bujają, | D G D
+ Gdzie się ludzie opalają,  | D G D
+ Wschody słońca piękne są | D G D
+ I komary w dupę tną. | D A D
+ Gdzie przy ogniu gra muzyka | D G D
+ I gorzała w gardłach znika, | D G D
+ A Pan Leśniczy nie wiadomo skąd | D A D
+ Woła do nas, do nas Dzień dobry (kochane) żeglarze!” | D A D
+

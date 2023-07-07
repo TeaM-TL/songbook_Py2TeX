@@ -1,92 +1,34 @@
-title
-Przechyły
-authors
-Roman Roczeń
+title: Przechyły
+authors: Roman Roczeń
 
-verse
-e D e
-Pierwszy raz przy pełnym takielunku,
-e D e
-Biorę ster i trzymam kurs na wiatr.
-a D e
-I jest jak przy pierwszym pocałunku
-a H7 e
-W ustach sól, gorącej wody smak.
-endverse
+Pierwszy raz przy pełnym takielunku, | e D e
+Biorę ster i trzymam kurs na wiatr. | e D e
+I jest jak przy pierwszym pocałunku | a D e
+W ustach sól, gorącej wody smak. | a H7 e
 
-chorus
-a D e
-O – ho, ho! Przechyły i przechyły!
-a D e
-O – ho, ho! Za falą fala mknie!
-a D e
-O – ho, ho! Trzymajcie się dziewczyny!
-a H7 e
-Ale wiatr, ósemka chyba dmie!
-endchorus
+ O – ho, ho! Przechyły i przechyły! | a D e
+ O – ho, ho! Za falą fala mknie! | a D e
+ O – ho, ho! Trzymajcie się dziewczyny! | a D e
+ Ale wiatr, ósemka chyba dmie! | a H7 e
 
-verse
-e D e
-Zwrot przez sztag, o’key zaraz zrobię!
-e D e
-Słyszę jak kapitan cicho klnie.
-a D e
-Gubię wiatr i zamiast w niego dziobem,
-a H7 e
-To on mnie od tyłu, kumple w śmiech.
-endverse
+Zwrot przez sztag, o’key zaraz zrobię! | e D e
+Słyszę jak kapitan cicho klnie. | e D e
+Gubię wiatr i zamiast w niego dziobem, | a D e
+To on mnie od tyłu, kumple w śmiech. | a H7 e
 
 chorus
-a D e
-O – ho, ho! Przechyły i przechyły!
-a D e
-O – ho, ho! Za falą fala mknie!
-a D e
-O – ho, ho! Trzymajcie się dziewczyny!
-a H7 e
-Ale wiatr, ósemka chyba dmie!
-endchorus
 
-verse
-e D e
-Hej ty tam z burtę wychylony
-e D e
-Tu naprawdę się nie ma z czego śmiać!
-a D e
-Cicho siedź i lepiej proś Neptuna,
-a H7 e
-Żeby coś nie spadło ci na kark.
-endverse
+Hej ty tam z burtę wychylony | e D e
+Tu naprawdę się nie ma z czego śmiać! | e D e
+Cicho siedź i lepiej proś Neptuna, | a D e
+Żeby coś nie spadło ci na kark. | a H7 e
 
 chorus
-a D e
-O – ho, ho! Przechyły i przechyły!
-a D e
-O – ho, ho! Za falą fala mknie!
-a D e
-O – ho, ho! Trzymajcie się dziewczyny!
-a H7 e
-Ale wiatr, ósemka chyba dmie!
-endchorus
 
-verse
-e D e
-Krople mgły, w tęczowym kropel pyle
-e D e
-Tańczy jacht, po deskach spływa dzień.
-a D e
-Jutro znów wypłynę, bo odkryłem
-a H7 e
-Morze, jacht. żeglarską starą pieśń.
-endverse
+Krople mgły, w tęczowym kropel pyle | e D e
+Tańczy jacht, po deskach spływa dzień. | e D e
+Jutro znów wypłynę, bo odkryłem | a D e
+Morze, jacht. żeglarską starą pieśń. | a H7 e
 
 chorus
-a D e
-O – ho, ho! Przechyły i przechyły!
-a D e
-O – ho, ho! Za falą fala mknie!
-a D e
-O – ho, ho! Trzymajcie się dziewczyny!
-a H7 e
-Ale wiatr, ósemka chyba dmie!
-endchorus
+

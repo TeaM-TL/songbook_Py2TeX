@@ -1,76 +1,32 @@
-title
-Paw blues
-authors
-Słowa i muzyka: Kazimierz Robak
+title: Paw blues
+authors: Słowa i muzyka: Kazimierz Robak
 
-verse
-E
-Przyszedł do mnie paw.
-E
-Powiedział mi: Dzień dobry Panu!
-E A7
-Och! A niech go szlag!
-E
-Do strasznego przywiódł mnie stanu!
-endverse
+Przyszedł do mnie paw. | E
+Powiedział mi: Dzień dobry Panu! | E
+Och! A niech go szlag! | E A7
+Do strasznego przywiódł mnie stanu! | E
 
-chorus
-H7
-O pawiu!
-A7 H7 E
-Utop w morzu swój wstrętny łeb!
-endchorus
+ O pawiu! | H7
+ Utop w morzu swój wstrętny łeb! | A7 H7 E
 
-verse
-E
-Żołądek mi skręcił
-E
-I wątrobę mi wynicował!
-E A7
-Och! A niech go szlag!
-E
-Dlaczego chce, bym chorował?
-endverse
+Żołądek mi skręcił | E
+I wątrobę mi wynicował! | E
+Och! A niech go szlag! | E A7
+Dlaczego chce, bym chorował? | E
 
 chorus
-H7
-O pawiu!
-A7 H7 E
-Utop w morzu swój wstrętny łeb!
-endchorus
 
-verse
-E
-Ten wstrętny paw
-E
-Przez burtę już wpół mnie kładzie!
-E A7
-Och! Treści i kwasy
-E
-Szlajają się po pokładzie!
-endverse
+Ten wstrętny paw | E
+Przez burtę już wpół mnie kładzie! | E
+Och! Treści i kwasy | E A7
+Szlajają się po pokładzie! | E
 
 chorus
-H7
-O pawiu!
-A7 H7 E
-Utop w morzu swój wstrętny łeb!
-endchorus
 
-verse
-E
-Poszedł już paw!
-E
-Cholera wie, kiedy znów przyjdzie!
-E A7
-Och! A niech go szlag!
-E
-Przez niego znów obiad wystygnie!
-endverse
+Poszedł już paw! |E
+Cholera wie, kiedy znów przyjdzie! | E
+Och! A niech go szlag! | E A7
+Przez niego znów obiad wystygnie! | E
 
 chorus
-H7
-O pawiu!
-A7 H7 E
-Utop w morzu swój wstrętny łeb!
-endchorus
+

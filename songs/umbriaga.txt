@@ -1,64 +1,25 @@
-title
-Umbriaga
-authors
-tekst i muzyka: Witold Zamojski
+title: Umbriaga
+authors: tekst i muzyka: Witold Zamojski
 
-verse
-       a7               D7
-Kiedy jacht nie wraca z mórz
-H7                  e
-i w główkach portu ciągle go brak,
-      a7
-Przejmujesz się i serce Ci drży,
-                      H7
-a może już pozostanie tak?
-endverse
+Kiedy jacht nie wraca z mórz | a7 D7
+i w główkach portu ciągle go brak, | H7 e
+Przejmujesz się i serce Ci drży, | a7
+a może już pozostanie tak? | H7
 
-chorus
-Ae
-Umbriaga wciąż gna,
-a7
-silnych wiatrów nie boi się,
-                     D7
-Szuflady wali raz po raz,
-G               H7
-bo przebrany ma bras.
-         e
-Więc nie przejmuj się,
-    a7
-oni wrócą tu,
-          D7
-Bo oprócz wiatrów i burz
-G            H7
-muszą być, i już.
-endchorus
 
-verse
-      a7            D7
-I gdy jesteś wróżką mą,
-H7             e
-o której myślę przez cały czas,
-          a7
-I chociaż żużel jest, piękna pogoda trwa,
-                                 H7
-Twą piękną postać i twarz przed oczyma mam.
-endverse
+ Umbriaga wciąż gna, | Ae
+ silnych wiatrów nie boi się, | a7
+ Szuflady wali raz po raz, | D7
+ bo przebrany ma bras. | G H7
+ Więc nie przejmuj się, | e
+ oni wrócą tu, | a7
+ Bo oprócz wiatrów i burz | D7
+ muszą być, i już. | G H7
+
+I gdy jesteś wróżką mą, | a7 D7
+o której myślę przez cały czas, | H7 e
+I chociaż żużel jest, piękna pogoda trwa, | a7
+Twą piękną postać i twarz przed oczyma mam. | H7
 
 chorus
-Ae
-Umbriaga wciąż gna,
-a7
-silnych wiatrów nie boi się,
-                     D7
-Szuflady wali raz po raz,
-G               H7
-bo przebrany ma bras.
-         e
-Więc nie przejmuj się,
-    a7
-oni wrócą tu,
-          D7
-Bo oprócz wiatrów i burz
-G            H7
-muszą być, i już.
-endchorus
+

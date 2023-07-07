@@ -1,290 +1,97 @@
-title
-Dziesięć w skali Beauforta 2
-authors
-słowa: autor nieznany, muzyka: Krzysztof Klenczon
+title: Dziesięć w skali Beauforta 2
+authors: słowa: autor nieznany, muzyka: Krzysztof Klenczon
 
-verse
-a d
-Kołysał nas zachodni wiatr,
-E7 a
-Brzeg był za rufą z dala 
-d a
-I nagle ktoś jak papier zbladł: 
-H7 E7
-Grot nam się rozpierdala!
-endverse
+Kołysał nas zachodni wiatr, | a d
+Brzeg był za rufą z dala | E7 a
+I nagle ktoś jak papier zbladł: | d a 
+Grot nam się rozpierdala! | H7 E7
 
-chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
+ A bosman tylko zapiął płaszcz | F C F C
+ I zaklął: „Mać jebana! | F E7 a
+ Nie mogłaś szmato, kurwa mać, | F G a E7 a
+ Zaczekać z tym do rana!?” | d E7 a
 
-verse
-a d
-Spod ciemnych ołowianych chmur
-E7 a
-Ulewa spadła nagle,
-d a
-A myśmy, jak te chuje dwa,
-H7 E7
-W kubryku szyli żagle.
-endverse
+Spod ciemnych ołowianych chmur | a d
+Ulewa spadła nagle, | E7 a
+A myśmy, jak te chuje dwa, | d a
+W kubryku szyli żagle. | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-A bosman do kubryku wpadł
-E7 a
-I zaklął: „Chuj wam w dupę!
-d a
-Złamali znowu igły dwie,
-H7 E7
-Gdzie ja dziś takie kupię?”
-endverse
+A bosman do kubryku wpadł | a d
+I zaklął: „Chuj wam w dupę! | E7 a
+Złamali znowu igły dwie, | d a
+Gdzie ja dziś takie kupię?” | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-W nawigacyjnej Stary siadł,
-E7 a
-Słuchając komunikat.
-d a
-Wkurwiony maksymalnie klął:
-H7 E7
-O żesz mać, znowu dycha!
-endverse
+W nawigacyjnej Stary siadł, | a d
+Słuchając komunikat. | E7 a
+Wkurwiony maksymalnie klął: | d a
+O żesz mać, znowu dycha! | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-A bosman tylko w mesie siadł
-E7 a
-Ponury jak na stypie.
-d a
-Jak dalej będzie piździć tak,
-H7 E7
-Rozpieprzy nam tę krypę!
-endverse
+A bosman tylko w mesie siadł | a d
+Ponury jak na stypie. | E7 a
+Jak dalej będzie piździć tak, | d a
+Rozpieprzy nam tę krypę! | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-W kambuzie kuk, rzygając w krąg,
-E7 a
-Ponuro żuł nienawiść:
-d a
-Że też te gnoje jeszcze żrą,
-H7 E7
-Toż takich można zabić!
-endverse
+W kambuzie kuk, rzygając w krąg, | a d
+Ponuro żuł nienawiść: | E7 a
+Że też te gnoje jeszcze żrą, | d a
+Toż takich można zabić! | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-A bosman tylko w mesie siadł
-E7 a
-I oparł nos na blacie:
-d a
-Obiad ma być dziś z trzech dań
-H7 E7
-I deser na dodatek!
-endverse
+A bosman tylko w mesie siadł | a d
+I oparł nos na blacie: | E7 a
+Obiad ma być dziś z trzech dań | d a
+I deser na dodatek! | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-Kompasu igła całą noc
-E7 a
-Tańczyła rock and rolla,
-d a
-A wściekły sternik czuł, że go
-H7 E7
-Ogarnia paranoja
-endverse
+Kompasu igła całą noc | a d
+Tańczyła rock and rolla, | E7 a
+A wściekły sternik czuł, że go | d a
+Ogarnia paranoja | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-A bosman do kokpitu wpadł
-E7 a
-I ujął szturwał w ręce:
-d a
-Do kurwy nędzy, równo jedź,
-H7 E7
-Bo jaja ci ukręcę!
-endverse
+A bosman do kokpitu wpadł | a d
+I ujął szturwał w ręce: | E7 a
+Do kurwy nędzy, równo jedź, | d a
+Bo jaja ci ukręcę! | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-Gdy słońce wyszło spoza chmur,
-E7 a
-A wicher się wyszalał,
-d a
-To bosman tylko flachę wziął
-H7 E7
-I szybko pałę zalał.
-endverse
+Gdy słońce wyszło spoza chmur, | a d
+A wicher się wyszalał, | E7 a
+To bosman tylko flachę wziął | d a
+I szybko pałę zalał. | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-A potem tylko zapiął płaszcz,
-E7 a
-Chciał zakląć – lecz nie zaklął,
-d a
-Odchamić się najwyższy czas,
-H7 E7
-Więc tylko ręką machnął.
-endverse
+A potem tylko zapiął płaszcz, | a d
+Chciał zakląć – lecz nie zaklął, | E7 a
+Odchamić się najwyższy czas, | d a
+Więc tylko ręką machnął. | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-Gdy słońce zgasło i gdy sztorm
-E7 a
-Wydmuchał się do woli,
-d a
-W bosmańskiej brodzie zakwitł blask
-H7 E7
-Setek kryształków soli.
-endverse
+Gdy słońce zgasło i gdy sztorm | a d
+Wydmuchał się do woli, | E7 a
+W bosmańskiej brodzie zakwitł blask | d a
+Setek kryształków soli. | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
 
-verse
-a d
-A bosman tylko zapiął płaszcz
-E7 a
-I zaklął… otóż nie zaklął!
-d a
-Bosman znów zaczął mówić nam
-H7 E7
-Piękną poprawną polszczyzną!
-endverse
+A bosman tylko zapiął płaszcz | a d
+I zaklął… otóż nie zaklął! | E7 a
+Bosman znów zaczął mówić nam | d a
+Piękną poprawną polszczyzną! | H7 E7
 
 chorus
-F C F C
-A bosman tylko zapiął płaszcz 
-F E7 a
-I zaklął: „Mać jebana! 
-F G a E7 a
-Nie mogłaś szmato, kurwa mać, 
-d E7 a
-Zaczekać z tym do rana!!?” 
-endchorus
+

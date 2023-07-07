@@ -1,112 +1,39 @@
-title
-Dwudziesty czwarty lutego
-authors
-słowa: Janusz Sikorski
+title: Dwudziesty czwarty lutego
+authors: słowa: Janusz Sikorski
 
-verse
-C
-To dwudziesty czwarty był lutego
-G
-Poranna zrzedła mgła, 
-a
-Wyszło z niej siedem uzbrojonych kryp, 
-a G a
-Turecki niosły znak. 
-endverse
 
-chorus
-~
-No i …
-G C
-Znów bijatyka, no i … 
-G C
-Znów bijatyka, no i … 
-C G
-Bijatyka cały dzień, 
-a
-I porąbany dzień, i porąbany łeb,
-a G a
-Razem bracia, aż po zmierzch! 
-Hej!
-endchorus
+To dwudziesty czwarty był lutego | C
+Poranna zrzedła mgła,  | G
+Wyszło z niej siedem uzbrojonych kryp, | a
+Turecki niosły znak. | a G a
 
-verse
-C
-Już pierwszy skrada się do burt,
-G
-A zwie się Goździk i
-a
-Z Algieru Pasza wysłał go,
-a G a
-Żeby nam upuścił krwi.
-endverse
+
+ No i ...
+ Znów bijatyka, no i | G C
+ Znów bijatyka, no i | G C
+ Bijatyka cały dzień, | G C
+ I porąbany dzień, i porąbany łeb, | a
+ Razem bracia, aż po zmierzch! | a G a
+ Hej!
+
+Już pierwszy skrada się do burt, | C
+A zwie się Goździk i | G
+Z Algieru Pasza wysłał go, | a
+Żeby nam upuścił krwi. | a G a
 
 chorus
-~
-No i …
-G C
-Znów bijatyka, no i … 
-G C
-Znów bijatyka, no i … 
-C G
-Bijatyka cały dzień, 
-a
-I porąbany dzień, i porąbany łeb,
-a G a
-Razem bracia, aż po zmierzch! 
-Hej!
-endchorus
 
-verse
-C
-Następny zbliża się do burt,
-G
-A zwie się Róży Pąk.
-a
-Plunęliśmy ze wszystkich rur –
-a G a
-Bardzo prędko szedł na dno.
-endverse
+Następny zbliża się do burt, | C
+A zwie się Róży Pąk. | G
+Plunęliśmy ze wszystkich rur | a
+Bardzo prędko szedł na dno. | a G a
 
 chorus
-~
-No i …
-G C
-Znów bijatyka, no i … 
-G C
-Znów bijatyka, no i … 
-C G
-Bijatyka cały dzień, 
-a
-I porąbany dzień, i porąbany łeb,
-a G a
-Razem bracia, aż po zmierzch! 
-Hej!
-endchorus
 
-verse
-C
-W naszych rękach dwa i dwa na dnie,
-G
-Cała reszta zwiała gdzieś,
-a
-No a jeden z nich zabraliśmy
-a G a
-Na starej Anglii brzeg.
-endverse
+W naszych rękach dwa i dwa na dnie, | C
+Cała reszta zwiała gdzieś, | G
+No a jeden z nich zabraliśmy | a
+Na starej Anglii brzeg. | a G a
 
 chorus
-~
-No i …
-G C
-Znów bijatyka, no  i… 
-G C
-Znów bijatyka, no i … 
-C G
-Bijatyka cały dzień, 
-a
-I porąbany dzień, i porąbany łeb,
-a G a
-Razem bracia, aż po zmierzch! 
-Hej!
-endchorus
+

@@ -1,64 +1,29 @@
-title
-Shenandoah
-authors
-słowa: Andrzej Mendygrał, R. Soliński
+title: Shenandoah
+authors: słowa: Andrzej Mendygrał, R. Soliński
 
-chorus
- C F C
-O Missouri, Ty wielka rzeko!
- F C
-– Ojcze rzek, kto bieg twój zmierzy?
- a e G C
-Wigwamy Indian na jej brzegach,
- G7 C e F C G7 C
-– Away, gdy czółno mknie poprzez nurt Missouri.
-endchorus
+ O Missouri, Ty wielka rzeko! | C F C
+ Ojcze rzek, kto bieg twój zmierzy? | F C
+ Wigwamy Indian na jej brzegach, | a e G C
+ Away, gdy czółno mknie poprzez nurt Missouri. | G7 C e F C G7 C
 
-verse
- C F C
-O Shenandoah, jej imię było,
- F C
-I nie wiedziała, co to miłość.
-endverse
+O Shenandoah, jej imię było, |  C F C
+I nie wiedziała, co to miłość. | F C
 
-verse
- C F C
-Aż przybył kupiec i w rozterce
- F C
-Jej własne ofiarował serce.
-endverse
+Aż przybył kupiec i w rozterce | C F C
+Jej własne ofiarował serce. | F C
 
-verse
- C F C
-A stary wódz rzekł, że nie może
- F C
-Białemu córka wodza ścielić łoże.
-endverse
+A stary wódz rzekł, że nie może | C F C
+Białemu córka wodza ścielić łoże. | F C
 
-verse
- C F C
-Lecz wódka białych wzrok mu mami.
- F C
-Już wojownicy śpią z duchami.
-endverse
+Lecz wódka białych wzrok mu mami. | C F C
+Już wojownicy śpią z duchami. | F C
 
-verse
- C F C
-Wziął czółno swe i z biegiem rzeki
- F C
-Dziewczynę uwiózł w kraj daleki.
-endverse
+Wziął czółno swe i z biegiem rzeki | C F C
+Dziewczynę uwiózł w kraj daleki. | F C
 
-verse
- C F C
-O, Shenandoah, czerwony ptaku,
- F C
-Wraz ze mną płyń po życia szlaku.
-endverse
+O, Shenandoah, czerwony ptaku, | C F C
+Wraz ze mną płyń po życia szlaku. | F C
 
-verse
- C F C
-O Missouri, Ty wielka rzeko!
- F C
-Wigwamy Indian na jej brzegach.
-endverse
+O Missouri, Ty wielka rzeko! | C F C
+Wigwamy Indian na jej brzegach. | F C
+

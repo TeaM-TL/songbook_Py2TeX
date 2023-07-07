@@ -1,92 +1,33 @@
-title
-Fiddler’s Green
-authors
-słowa: Jerzy Rogacki, muzyka: John Conolly
+title: Fiddler’s Green
+authors: słowa: Jerzy Rogacki, muzyka: John Conolly
 
-verse
-C F C a
-Stary port się powoli układał do snu,
-C F C G
-Świeża bryza zmarszczyła morze gładkie jak stół,
-F e d C
-Stary rybak na kei zaczął śpiewać swą pieśń:
-a7 d7 F G
-– Zabierzcie mnie chłopcy, mój czas kończy się.
-endverse
+Stary port się powoli układał do snu, | C F C a
+Świeża bryza zmarszczyła morze gładkie jak stół, | C F C G
+Stary rybak na kei zaczął śpiewać swą pieśń: | F e d C
+Zabierzcie mnie chłopcy, mój czas kończy się. | a7 d7 F G
 
-chorus
-C G C C7
-Tylko wezmę mój sztormiak i sweter,
-F C G
-Ostatni raz spojrzę na pirs.
-F C e
-Pozdrów moich kolegów, powiedz, że dnia pewnego
-d G F C
-Spotkamy się wszyscy tam w Fiddler’s Green.
-endchorus
+ Tylko wezmę mój sztormiak i sweter, | C G C C7
+ Ostatni raz spojrzę na pirs. | F C G
+ Pozdrów moich kolegów, powiedz, że dnia pewnego | F C e
+ Spotkamy się wszyscy tam w Fiddler’s Green. | d G F C
 
-verse
-C F C a
-O Fiddler’s Green słyszałem nie raz,
-C F C G
-Jeśli piekło ominę, dopłynąć chcę tam,
-F e d C
-Gdzie delfiny figlują w wodzie czystej jak łza,
-a7 d7 F G
-A o mroźnej Grenlandii zapomina się tam.
-endverse
+O Fiddler’s Green słyszałem nie raz, | C F C a
+Jeśli piekło ominę, dopłynąć chcę tam, | C F C G
+Gdzie delfiny figlują w wodzie czystej jak łza, | F e d C
+A o mroźnej Grenlandii zapomina się tam. | a7 d7 F G
 
 chorus
-C G C C7
-Tylko wezmę mój sztormiak i sweter,
-F C G
-Ostatni raz spojrzę na pirs.
-F C e
-Pozdrów moich kolegów, powiedz, że dnia pewnego
-d G F C
-Spotkamy się wszyscy tam w Fiddler’s Green.
-endchorus
 
-verse
-C F C a
-Kiedy już tam dopłynę, oddam cumy na ląd,
-C F C G
-Różne bary są czynne cały dzień, całą noc,
-F e d C
-Piwo nic nie kosztuje, dziewczęta jak sen,
-a7 d7 F G
-A rum w buteleczkach rośnie na każdym z drzew.
-endverse
+Kiedy już tam dopłynę, oddam cumy na ląd, | C F C a
+Różne bary są czynne cały dzień, całą noc, | C F C G
+Piwo nic nie kosztuje, dziewczęta jak sen, | F e d C
+A rum w buteleczkach rośnie na każdym z drzew. | a7 d7 F G
 
 chorus
-C G C C7
-Tylko wezmę mój sztormiak i sweter,
-F C G
-Ostatni raz spojrzę na pirs.
-F C e
-Pozdrów moich kolegów, powiedz, że dnia pewnego
-d G F C
-Spotkamy się wszyscy tam w Fiddler’s Green.
-endchorus
 
-verse
-C F C a
-Aureola i harfa to nie to, o czym śnię,
-C F C G
-O morza rozkołys i wiatr modlę się.
-F e d C
-Stare pudło wyciągnę, zagram coś w cichą noc,
-a7 d7 F G
-A wiatr w takielunku zaśpiewa swój song.
-endverse
+Aureola i harfa to nie to, o czym śnię, | C F C a
+O morza rozkołys i wiatr modlę się. | C F C G
+Stare pudło wyciągnę, zagram coś w cichą noc, | F e d C
+A wiatr w takielunku zaśpiewa swój song. | a7 d7 F G
 
 chorus
-C G C C7
-Tylko wezmę mój sztormiak i sweter,
-F C G
-Ostatni raz spojrzę na pirs.
-F C e
-Pozdrów moich kolegów, powiedz, że dnia pewnego
-d G F C
-Spotkamy się wszyscy tam w Fiddler’s Green.
-endchorus
