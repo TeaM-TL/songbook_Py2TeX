@@ -46,7 +46,10 @@ def line_parse(line, current_line, start):
     line = line.strip()
     splitted_line = re.split('\|', line, 1)
     if len(splitted_line) == 2:
-        text = '\\marginnote{\\textsf{' + splitted_line[1].strip() + '}} ' + splitted_line[0].strip() + '\n'
+        text = '\\marginnote{\\textsf{' + \
+                splitted_line[1].strip() + \
+                '}} ' + \
+                splitted_line[0].strip() + '\n'
     else:
         text = line.strip() + '\n'
     if start:
@@ -114,7 +117,6 @@ def generate(songs_dir, out_dir):
                 file_contents = file_contents + str(text)
 
         file_contents = file_contents + '\n\\endsong\n'
-        #print(file_contents)
         with open(os.path.join(out_dir, song_name + TEXEXT), 'w', encoding='utf-8') as file_out:
             file_out.write(file_contents)
         with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
@@ -148,7 +150,7 @@ def main():
     generate(songs_dir, out_dir)
     # end statements in TeX file
     with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
-        text = '\n\\end{songs}\n\\showindex[2]{Spis szant}{titleidx}\n\\end{document}\n'
+        text = '\\end{songs}\n\\showindex[2]{Spis szant}{titleidx}\n\\end{document}\n'
         file_out.write(text)
 
 
