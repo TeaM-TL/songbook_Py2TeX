@@ -46,9 +46,9 @@ def line_parse(line, current_line, start):
     line = line.strip()
     splitted_line = re.split('\|', line, 1)
     if len(splitted_line) == 2:
-        text = '\\marginnote{\\textsf{' + splitted_line[1] + '}} ' + splitted_line[0] + '\n'
+        text = '\\marginnote{\\textsf{' + splitted_line[1].strip() + '}} ' + splitted_line[0].strip() + '\n'
     else:
-        text = line + '\n'
+        text = line.strip() + '\n'
     if start:
         if current_line == 'verse':
             text = '\\verse\\singlespace\n' + text
@@ -57,7 +57,8 @@ def line_parse(line, current_line, start):
 
     return text
 
-def generate(songs_dir, out_dir, chord_right):
+
+def generate(songs_dir, out_dir):
     """ generate TeX from TXT file """
 
     song_files = [file_name for file_name in os.listdir(songs_dir) if file_name.endswith(SONGEXT)]
@@ -144,7 +145,7 @@ def main():
     if chord_right == 0:
         with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
             file_out.write('\\reversemarginpar\n')
-    generate(songs_dir, out_dir, chord_right)
+    generate(songs_dir, out_dir)
     # end statements in TeX file
     with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
         text = '\n\\end{songs}\n\\showindex[2]{Spis szant}{titleidx}\n\\end{document}\n'
