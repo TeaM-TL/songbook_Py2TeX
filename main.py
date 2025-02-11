@@ -3,7 +3,8 @@
 # pylint: disable=too-many-branches
 # pylint: disable=too-many-lines
 # pylint: disable=too-many-statements
-# pylint disable=invalid-name
+# pylint: disable=invalid-name
+# pylint: disable=line-too-long
 
 """
 Copyright (c) 2023-2025 Tomasz Łuczak
@@ -39,8 +40,8 @@ TEMPLATE_DIR = os.path.join(os.getcwd(), "tex")
 OUT_DIR = os.path.join(os.getcwd(), "tmp")
 SONGS_DIR = os.path.join(os.getcwd(), "songs")
 MAIN_TEX = os.path.join(OUT_DIR, "main.tex")
-LAYOUT_TEX = os.path.join(OUT_DIR, "layout.tex")
-SONGEXT = "txt"
+LAYOUT_TEX = os.path.join(OUT_DIR, "main_layout.tex")
+SONG_REF_TEX = os.path.join(OUT_DIR, "main_song_ref.tex")
 
 
 def line_parse(line, current_line, start):
@@ -70,7 +71,7 @@ def generate(song_on_new_page):
     """generate TeX from TXT file"""
 
     song_files = [
-        file_name for file_name in os.listdir(SONGS_DIR) if file_name.endswith(SONGEXT)
+        file_name for file_name in os.listdir(SONGS_DIR) if file_name.endswith("txt")
     ]
     song_files.sort()
     for song_file in song_files:
@@ -92,7 +93,7 @@ def generate(song_on_new_page):
                         text = "\\endverse\n\n"
                     elif current == "chorus":
                         text = "\\endchorus\n\n"
-                        chorus_contents = chorus_contents + text
+                        chorus_contents += text
                     else:
                         text = ""
                     current = ""
@@ -121,11 +122,11 @@ def generate(song_on_new_page):
                     text = line_parse(line, current, start_chorus)
                     if start_chorus:
                         start_chorus = 0
-                    chorus_contents = chorus_contents + text
+                    chorus_contents += text
 
-                file_contents = file_contents + str(text)
+                file_contents += str(text)
 
-        file_contents += "\n\\endsong\n" 
+        file_contents += "\n\\endsong\n"
         if song_on_new_page:
             # file_contents += "\n\\nextcol\n\n"
             file_contents += "\n\\brk\n"
@@ -170,6 +171,17 @@ def main():
         if font_lato:
             file_out.write("\\setmainfont{Lato}\n\\setsansfont{Lato Light}\n")
 
+    with open(SONG_REF_TEX, "w", encoding="utf-8") as file_out:
+        if contents:
+            text = """% hyperlinks for table of contents
+\\renewcommand{\\songtarget}[2]
+{\\pdfbookmark[#1]{\\thesongnum. \\songtitle}{#2}}
+\\renewcommand{\\songlink}[2]{\\hyperlink{#1}{#2}}
+"""
+
+        else:
+            text = "% empty file\n"
+        file_out.write(text)
     # TeX templates
     for filename in ("main.tex", "title.tex", "songs.sty", "songidx.lua"):
         shutil.copyfile(
