@@ -1,0 +1,59 @@
+\documentclass[oneside,11pt]{report}
+\usepackage{xltxtra}
+\usepackage{xunicode}
+\usepackage{fontspec}
+\usepackage{polski}
+
+\usepackage[a4paper]{geometry}
+\usepackage{geometry}
+\geometry{
+  verbose,
+  paperwidth=210mm,
+  paperheight=297mm,
+  marginparwidth=35mm,
+  left=45mm,
+  right=22.5mm,
+  top=20mm,
+  bottom=25mm,
+  headsep=12pt
+}
+
+\usepackage{marginnote}
+%\reversemarginpar
+
+\input{layout}
+
+\versesep=5pt plus 2pt minus 2pt
+
+\usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    linktoc=all
+}
+
+\pagestyle{empty}
+\newindex{titleidx}{cbtitle}
+%\newindex{mainindex}{idxfile}
+
+\newcommand{\TITLE}{Mój śpiewnik}
+\newcommand{\SUBTITLE}{Szanty na rejsy}
+\newcommand{\AUTHOR}{Jacek}
+\newcommand{\GENERATOR}{generator \url{https://github.com/TeaM-TL/songbook_Py2TeX/}}
+
+\title{\TITLE}
+\author{Zebrał \AUTHOR}
+\date{\GENERATOR \\ \today}
+
+\begin{document}
+%\maketitle
+\input{title}
+\clearpage
+
+\noversenumbers
+\songcolumns{1}
+
+\begin{songs}{titleidx}
+

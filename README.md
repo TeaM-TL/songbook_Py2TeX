@@ -1,6 +1,6 @@
 # Songbook Py2TeX
 
-Python generator for songbook, from TXT to TeX format
+Python generator for songbook in PDF, from plain TXT via TeX format
 
 ## Idea
 
@@ -51,3 +51,24 @@ or if use Windows
 ```bash
 start.bat
 ```
+
+## Configuration
+
+Example of `config.ini`:
+
+```ini
+[Settings]
+chord_right = 0
+chorus_repeat = 1
+slide = 0
+font_lato = 1
+new_page = 1
+contents = 1
+```
+
+- chord_right - chord is printed on left (0) or right side (1)
+- chorus_repeat - repeat (1) chorus or not (0)
+- slide - generate as book (0) or as slide (1) eg. for mobile phone
+- font_lato - use font lato (1) or default (0)
+- new_page - every song start on new page (1) or not (0)
+- contents - add (1) table of contents or not (0)

@@ -6,7 +6,7 @@
 # pylint disable=invalid-name
 
 """
-Copyright (c) 2023 Tomasz Łuczak, TeaM-TL
+Copyright (c) 2023-2025 Tomasz Łuczak
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -34,81 +34,90 @@ import os
 import re
 import shutil
 
-SONGS='songs'
-OUTDIR='tmp'
-TEXTMPL='tex'
-SONGEXT='txt'
-TEXEXT='.tex'
+
+TEMPLATE_DIR = os.path.join(os.getcwd(), "tex")
+OUT_DIR = os.path.join(os.getcwd(), "tmp")
+SONGS_DIR = os.path.join(os.getcwd(), "songs")
+MAIN_TEX = os.path.join(OUT_DIR, "main.tex")
+LAYOUT_TEX = os.path.join(OUT_DIR, "layout.tex")
+SONGEXT = "txt"
 
 
 def line_parse(line, current_line, start):
-    """ parse line """
+    """parse line"""
     line = line.strip()
-    splitted_line = re.split('\|', line, 1)
+    splitted_line = re.split(r"\|", line, 1)
     if len(splitted_line) == 2:
-        text = '\\marginnote{\\textsf{' + \
-                splitted_line[1].strip() + \
-                '}} ' + \
-                splitted_line[0].strip() + '\n'
+        text = (
+            "\\marginnote{\\textsf{"
+            + splitted_line[1].strip()
+            + "}} "
+            + splitted_line[0].strip()
+            + "\n"
+        )
     else:
-        text = line.strip() + '\n'
+        text = line.strip() + "\n"
     if start:
-        if current_line == 'verse':
-            text = '\\verse\\singlespace\n' + text
-        elif current_line == 'chorus':
-            text = '\\chorus\\singlespace\n' + text
+        if current_line == "verse":
+            text = "\\verse\\singlespace\n" + text
+        elif current_line == "chorus":
+            text = "\\chorus\\singlespace\n" + text
 
     return text
 
 
-def generate(songs_dir, out_dir):
-    """ generate TeX from TXT file """
+def generate(song_on_new_page):
+    """generate TeX from TXT file"""
 
-    song_files = [file_name for file_name in os.listdir(songs_dir) if file_name.endswith(SONGEXT)]
+    song_files = [
+        file_name for file_name in os.listdir(SONGS_DIR) if file_name.endswith(SONGEXT)
+    ]
     song_files.sort()
     for song_file in song_files:
         song_name = os.path.splitext(song_file)[0]
-        print('Processing: ' + song_name)
+        print("Processing: " + song_name)
 
-        file_contents = ''
-        chorus_contents = ''
-        text = ''
-        current = ''
-        with open(os.path.join(songs_dir,song_file), 'r', encoding='utf-8') as file_data:
+        file_contents = ""
+        chorus_contents = ""
+        text = ""
+        current = ""
+        with open(
+            os.path.join(SONGS_DIR, song_file), "r", encoding="utf-8"
+        ) as file_data:
             for line in file_data:
                 line_strip = line.strip()
                 if len(line_strip) == 0:
                     # empty line as separator
-                    if current == 'verse':
-                        text = '\\endverse\n\n'
-                    elif current == 'chorus':
-                        text = '\\endchorus\n\n'
+                    if current == "verse":
+                        text = "\\endverse\n\n"
+                    elif current == "chorus":
+                        text = "\\endchorus\n\n"
                         chorus_contents = chorus_contents + text
                     else:
-                        text = ''
-                    current = ''
+                        text = ""
+                    current = ""
                     start_verse = 1
                     start_chorus = 1
-                elif re.search('chorus', line):
+                elif re.search("chorus", line):
                     # print chorus
                     text = chorus_contents
-                elif re.search('^title:', line):
+                elif re.search("^title:", line):
                     # title
-                    title = re.split('^title:', line)
-                    text = '\\beginsong{' + title[1].strip() + '}['
-                elif re.search('^authors:', line):
+                    title = re.split("^title:", line)
+                    text = "\\beginsong{" + title[1].strip() + "}["
+                elif re.search("^authors:", line):
                     # authors
-                    authors = re.split('^authors:', line)
-                    text =  'by={' + authors[1].strip() + '}]\n\n'
-                elif re.search('^[^ ]', line):
+                    authors = re.split("^authors:", line)
+                    text = "by={" + authors[1].strip() + "}]\n\n"
+                elif re.search("^[^ ]", line):
                     # verse
-                    current = 'verse'
+                    current = "verse"
                     text = line_parse(line, current, start_verse)
                     if start_verse:
                         start_verse = 0
-                elif re.search('^ ', line):
+                elif re.search("^ ", line):
                     # chorus
-                    current = 'chorus'
+                    current = "chorus"
                     text = line_parse(line, current, start_chorus)
                     if start_chorus:
                         start_chorus = 0
@@ -116,43 +125,69 @@ def generate(songs_dir, out_dir):
 
                 file_contents = file_contents + str(text)
 
-        file_contents = file_contents + '\n\\endsong\n'
-        with open(os.path.join(out_dir, song_name + TEXEXT), 'w', encoding='utf-8') as file_out:
+        file_contents += "\n\\endsong\n" 
+        if song_on_new_page:
+            # file_contents += "\n\\nextcol\n\n"
+            file_contents += "\n\\brk\n"
+
+        with open(
+            os.path.join(OUT_DIR, song_name + ".tex"), "w", encoding="utf-8"
+        ) as file_out:
             file_out.write(file_contents)
-        with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
-            file_out.write('\\input{' + song_name + '}\n\n')
+        with open(MAIN_TEX, "a", encoding="utf-8") as file_out:
+            file_out.write("\\input{" + song_name + "}\n\n")
 
 
 def main():
-    """ main function """
+    """main function"""
     try:
         config = configparser.ConfigParser()
-        config.read('config.ini', encoding="utf8")
+        config.read("config.ini", encoding="utf8")
 
         # read values from a section
-        chord_right = config.getint('Settings', 'chord_right')
+        chord_right = config.getint("Settings", "chord_right")
+        slide = config.getint("Settings", "slide")
+        font_lato = config.getint("Settings", "font_lato")
+        new_page = config.getint("Settings", "new_page")
+        contents = config.getint("Settings", "contents")
     except:
         chord_right = 0
+        slide = 0
+        font_lato = 0
+        new_page = 0
+        contents = 0
 
-    songs_dir = os.path.join(os.getcwd(), SONGS)
-    template = os.path.join(os.getcwd(), TEXTMPL)
-    out_dir = os.path.join(os.getcwd(), OUTDIR)
-    if not os.path.exists(out_dir):
-        os.makedirs(out_dir)
-    # TeX template
-    shutil.copyfile(os.path.join(template, 'template.tex'), os.path.join(out_dir, 'main.tex'))
-    shutil.copyfile(os.path.join(template, 'title.tex'),    os.path.join(out_dir, 'title.tex'))
-    shutil.copyfile(os.path.join(template, 'songs.sty'),    os.path.join(out_dir, 'songs.sty'))
-    shutil.copyfile(os.path.join(template, 'songidx.lua'),  os.path.join(out_dir, 'songidx.lua'))
+    if not os.path.exists(OUT_DIR):
+        os.makedirs(OUT_DIR)
+
+    if slide:
+        layout = "slides"
+    else:
+        layout = "chorded"
+
+    with open(LAYOUT_TEX, "w", encoding="utf-8") as file_out:
+        file_out.write("\\usepackage[" + layout + "]{songs}\n")
+        if font_lato:
+            file_out.write("\\setmainfont{Lato}\n\\setsansfont{Lato Light}\n")
+
+    # TeX templates
+    for filename in ("main.tex", "title.tex", "songs.sty", "songidx.lua"):
+        shutil.copyfile(
+            os.path.join(TEMPLATE_DIR, filename), os.path.join(OUT_DIR, filename)
+        )
+
     if chord_right == 0:
-        with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
-            file_out.write('\\reversemarginpar\n')
-    generate(songs_dir, out_dir)
+        with open(MAIN_TEX, "a", encoding="utf-8") as file_out:
+            file_out.write("\\reversemarginpar\n\n")
+    generate(new_page)
     # end statements in TeX file
-    with open(os.path.join(out_dir, 'main.tex'), 'a', encoding='utf-8') as file_out:
-        text = '\\end{songs}\n\\showindex[2]{Spis szant}{titleidx}\n\\end{document}\n'
+    with open(MAIN_TEX, "a", encoding="utf-8") as file_out:
+        text = "\\end{songs}\n"
+        if contents:
+            text += "\\showindex[2]{Spis szant}{titleidx}\n"
+        text += "\\end{document}\n"
         file_out.write(text)
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()

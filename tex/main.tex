@@ -1,5 +1,3 @@
-%\documentclass[a4paper,sfheadings,12pt]{mwrep}
-% mwrep has no space for marginnotes, needs more configuration :-(
 \documentclass[oneside,11pt]{report}
 \usepackage{xltxtra}
 \usepackage{xunicode}
@@ -23,12 +21,9 @@
 \usepackage{marginnote}
 %\reversemarginpar
 
-\usepackage[chorded]{songs}
-%\usepackage[slides]{songs}
-\versesep=5pt plus 2pt minus 2pt
+\input{layout}
 
-\setmainfont{Lato}
-\setsansfont{Lato Light}
+\versesep=5pt plus 2pt minus 2pt
 
 \usepackage{setspace}
 \usepackage{hyperref}
@@ -59,7 +54,6 @@
 
 \noversenumbers
 \songcolumns{1}
-
 
 \begin{songs}{titleidx}
 
