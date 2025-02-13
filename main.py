@@ -32,6 +32,7 @@ Python generator for songbook, from txt to TeX format
 
 import configparser
 import os
+import os.path
 import re
 import shutil
 
@@ -42,6 +43,30 @@ SONGS_DIR = os.path.join(os.getcwd(), "songs")
 MAIN_TEX = os.path.join(OUT_DIR, "main.tex")
 LAYOUT_TEX = os.path.join(OUT_DIR, "main_layout.tex")
 SONG_REF_TEX = os.path.join(OUT_DIR, "main_song_ref.tex")
+
+
+def tex_layout(layout, lato, table_of_contents):
+    """initial layout"""
+    if layout:
+        layout = "slides"
+    else:
+        layout = "chorded"
+
+    with open(LAYOUT_TEX, "w", encoding="utf-8") as fh_out:
+        fh_out.write("\\usepackage[" + layout + "]{songs}\n")
+        if lato:
+            fh_out.write("\\setmainfont{Lato}\n\\setsansfont{Lato Light}\n")
+
+    with open(SONG_REF_TEX, "w", encoding="utf-8") as fh_out:
+        if table_of_contents:
+            text = """% hyperlinks for table of contents
+\\renewcommand{\\songtarget}[2]
+{\\pdfbookmark[#1]{\\thesongnum. \\songtitle}{#2}}
+\\renewcommand{\\songlink}[2]{\\hyperlink{#1}{#2}}
+"""
+        else:
+            text = "% empty file\n"
+        fh_out.write(text)
 
 
 def line_parse(line, current_line, start):
@@ -67,11 +92,48 @@ def line_parse(line, current_line, start):
     return text
 
 
-def generate(song_on_new_page):
+def generate_begin_section(full_dir, short_dir):
+    """generate section if filr 0.dir exists"""
+    file_name = short_dir + "_begin"
+    print("Processing: " + file_name)
+    section_file = os.path.join(full_dir, "0.dir")
+    section_data = ""
+    if os.path.exists(section_file):
+        with open(section_file, "r", encoding="utf-8") as fh_section:
+            section_data = fh_section.readline()
+    if section_data:
+        section_data = "\\songsection{" + section_data + "}\n"
+    file_contents = section_data + "\\begin{songs}{titleidx}\n"
+
+    with open(
+        os.path.join(OUT_DIR, file_name + ".tex"), "w", encoding="utf-8"
+    ) as fh_out:
+        fh_out.write(file_contents)
+    with open(MAIN_TEX, "a", encoding="utf-8") as fh_out:
+        fh_out.write("\\input{" + file_name + "}\n\n")
+
+
+def generate_end_section(short_dir):
+    """generate section if filr 0.dir exists"""
+    file_name = short_dir + "_end"
+    print("Processing: " + file_name)
+    file_contents = "\\end{songs}\n"
+
+    with open(
+        os.path.join(OUT_DIR, file_name + ".tex"), "w", encoding="utf-8"
+    ) as fh_out:
+        fh_out.write(file_contents)
+    with open(MAIN_TEX, "a", encoding="utf-8") as fh_out:
+        fh_out.write("\\input{" + file_name + "}\n\n")
+
+
+def generate(songs_txt_dir, song_on_new_page):
     """generate TeX from TXT file"""
 
     song_files = [
-        file_name for file_name in os.listdir(SONGS_DIR) if file_name.endswith("txt")
+        file_name
+        for file_name in os.listdir(songs_txt_dir)
+        if file_name.endswith("txt")
     ]
     song_files.sort()
     for song_file in song_files:
@@ -83,9 +145,9 @@ def generate(song_on_new_page):
         text = ""
         current = ""
         with open(
-            os.path.join(SONGS_DIR, song_file), "r", encoding="utf-8"
-        ) as file_data:
-            for line in file_data:
+            os.path.join(songs_txt_dir, song_file), "r", encoding="utf-8"
+        ) as fh_data:
+            for line in fh_data:
                 line_strip = line.strip()
                 if len(line_strip) == 0:
                     # empty line as separator
@@ -133,10 +195,20 @@ def generate(song_on_new_page):
 
         with open(
             os.path.join(OUT_DIR, song_name + ".tex"), "w", encoding="utf-8"
-        ) as file_out:
-            file_out.write(file_contents)
-        with open(MAIN_TEX, "a", encoding="utf-8") as file_out:
-            file_out.write("\\input{" + song_name + "}\n\n")
+        ) as fh_out:
+            fh_out.write(file_contents)
+        with open(MAIN_TEX, "a", encoding="utf-8") as fh_out:
+            fh_out.write("\\input{" + song_name + "}\n\n")
+
+
+def generate_end_tex_statements(table_of_contents):
+    """add end statements in TeX file"""
+    with open(MAIN_TEX, "a", encoding="utf-8") as fh_out:
+        text = "\n"
+        if table_of_contents:
+            text += "\\showindex[2]{Spis treści}{titleidx}\n"
+        text += "\\end{document}\n"
+        fh_out.write(text)
 
 
 def main():
@@ -161,27 +233,8 @@ def main():
     if not os.path.exists(OUT_DIR):
         os.makedirs(OUT_DIR)
 
-    if slide:
-        layout = "slides"
-    else:
-        layout = "chorded"
+    tex_layout(slide, font_lato, contents)
 
-    with open(LAYOUT_TEX, "w", encoding="utf-8") as file_out:
-        file_out.write("\\usepackage[" + layout + "]{songs}\n")
-        if font_lato:
-            file_out.write("\\setmainfont{Lato}\n\\setsansfont{Lato Light}\n")
-
-    with open(SONG_REF_TEX, "w", encoding="utf-8") as file_out:
-        if contents:
-            text = """% hyperlinks for table of contents
-\\renewcommand{\\songtarget}[2]
-{\\pdfbookmark[#1]{\\thesongnum. \\songtitle}{#2}}
-\\renewcommand{\\songlink}[2]{\\hyperlink{#1}{#2}}
-"""
-
-        else:
-            text = "% empty file\n"
-        file_out.write(text)
     # TeX templates
     for filename in ("main.tex", "title.tex", "songs.sty", "songidx.lua"):
         shutil.copyfile(
@@ -189,16 +242,20 @@ def main():
         )
 
     if chord_right == 0:
-        with open(MAIN_TEX, "a", encoding="utf-8") as file_out:
-            file_out.write("\\reversemarginpar\n\n")
-    generate(new_page)
-    # end statements in TeX file
-    with open(MAIN_TEX, "a", encoding="utf-8") as file_out:
-        text = "\\end{songs}\n"
-        if contents:
-            text += "\\showindex[2]{Spis szant}{titleidx}\n"
-        text += "\\end{document}\n"
-        file_out.write(text)
+        with open(MAIN_TEX, "a", encoding="utf-8") as fh_out:
+            fh_out.write("\\reversemarginpar\n\n")
+
+    songs_dirs = list(os.listdir(SONGS_DIR))
+    songs_dirs.sort()
+    print(songs_dirs)
+    for songs_dir in songs_dirs:
+        songs_full_dir = os.path.join(SONGS_DIR, songs_dir)
+        if os.path.isdir(songs_full_dir):
+            generate_begin_section(songs_full_dir, songs_dir)
+            generate(songs_full_dir, new_page)
+            generate_end_section(songs_dir)
+
+    generate_end_tex_statements(contents)
 
 
 if __name__ == "__main__":
