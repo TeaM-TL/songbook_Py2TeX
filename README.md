@@ -4,6 +4,12 @@ Python generator for songbook in PDF, from plain TXT via TeX format
 
 ## Idea
 
+### Songs
+- Organize songs by folders
+- Put in every forlde file 0.dir
+- Type name of section in first row of 0.dir file
+- Files and dirs names cannot contains spaces or nonlatin characters
+
 ### Source of songs
 
 Every song is in separate file, like
@@ -34,11 +40,15 @@ keyword *chorus* repeat chorus instead write again
 
 ### Output
 
+Songs are sorted alphabetically first by folders names, and later file names.
+
+Table of contents is ordered alphabetically without folders.
+
 After song processing XeLaTeX will process full songbook using *songbook* package.
 Output format is PDF.
 
 ## Requirements
-- XeLaTeX installation, TeX Live or MacTeX
+- XeLaTeX installation, the best are TeX Live or MacTeX (try full install)
 - Python3
 
 ## How to run
