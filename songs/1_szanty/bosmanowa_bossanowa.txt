@@ -1,13 +1,11 @@
 title: Bosmanowa bossanowa
 authors: ~
 
-
 Już światła milkną i cichną, | cis7 fis7
 Latarnia żegna mdłym blaskiem. | A7+ Gis7 cis7
 Księżyc nad wody toń już wypłynął | fis7
 Księżyc nad wody toń już wypłynął | cis7
 I nocną znów objął wachtę. | Dis7 Gis7 H7
-
 
  Brzmi cichutko bossanowa, | E
  Bossanowa bosmanowa,
@@ -18,7 +16,6 @@ I nocną znów objął wachtę. | Dis7 Gis7 H7
  Gdy żeglarze w kojach śpią, | fis H7
  Sny o lądach im się śnią. | E H7
 
-
 Pan Bosman wszystkie zna morza, | cis7 fis7
 Przepłynął szlaki najdalsze. | A7+ Gis7 cis7
 Nocna znów zabrzmi dziś bossanowa, | fis7
@@ -27,12 +24,10 @@ A bosman czuwa uparcie. | Dis7 Gis7 H7
 
 chorus
 
-
 Dziś z fajką przysiadł się znużony, | cis7 fis7
 W odległe czasy spogląda. | A7+ Gis7 cis7
 Chciałby wspomnienia swoje dogonić, | fis7
 Chciałby wspomnienia swoje dogonić, | cis7
 Gdy wiatr usypia na lądach. | Dis7 Gis7 H7
-
 
 chorus

@@ -45,7 +45,7 @@ LAYOUT_TEX = os.path.join(OUT_DIR, "main_layout.tex")
 SONG_REF_TEX = os.path.join(OUT_DIR, "main_song_ref.tex")
 
 
-def tex_layout(layout, lato, table_of_contents):
+def tex_layout(layout, lato, table_of_contents, chorus_left_line):
     """initial layout"""
     if layout:
         layout = "slides"
@@ -56,6 +56,8 @@ def tex_layout(layout, lato, table_of_contents):
         fh_out.write("\\usepackage[" + layout + "]{songs}\n")
         if lato:
             fh_out.write("\\setmainfont{Lato}\n\\setsansfont{Lato Light}\n")
+        if not chorus_left_line:
+            fh_out.write("\\setlength{\cbarwidth}{0pt}")
 
     with open(SONG_REF_TEX, "w", encoding="utf-8") as fh_out:
         if table_of_contents:
@@ -223,17 +225,19 @@ def main():
         font_lato = config.getint("Settings", "font_lato")
         new_page = config.getint("Settings", "new_page")
         contents = config.getint("Settings", "contents")
+        chorus_line = config.getint("Settings", "chorus_line")
     except:
         chord_right = 0
         slide = 0
         font_lato = 0
         new_page = 0
         contents = 0
+        chorus_line = 1
 
     if not os.path.exists(OUT_DIR):
         os.makedirs(OUT_DIR)
 
-    tex_layout(slide, font_lato, contents)
+    tex_layout(slide, font_lato, contents, chorus_line)
 
     # TeX templates
     for filename in ("main.tex", "title.tex", "songs.sty", "songidx.lua"):
