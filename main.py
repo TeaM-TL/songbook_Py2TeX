@@ -49,11 +49,14 @@ def tex_layout(layout, lato, table_of_contents, chorus_left_line):
     """initial layout"""
     if layout:
         layout = "slides"
+        versesep = "11"
     else:
         layout = "chorded"
+        versesep = "0"
 
     with open(LAYOUT_TEX, "w", encoding="utf-8") as fh_out:
         fh_out.write("\\usepackage[" + layout + "]{songs}\n")
+        fh_out.write("\\versesep=" + versesep + "pt plus 2pt minus 2pt\n")
         if lato:
             fh_out.write("\\setmainfont{Lato}\n\\setsansfont{Lato Light}\n")
         if not chorus_left_line:
