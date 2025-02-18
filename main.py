@@ -57,7 +57,7 @@ def tex_layout(layout, lato, table_of_contents, chorus_left_line):
         if lato:
             fh_out.write("\\setmainfont{Lato}\n\\setsansfont{Lato Light}\n")
         if not chorus_left_line:
-            fh_out.write("\\setlength{\cbarwidth}{0pt}")
+            fh_out.write("\\setlength{\\cbarwidth}{0pt}")
 
     with open(SONG_REF_TEX, "w", encoding="utf-8") as fh_out:
         if table_of_contents:
